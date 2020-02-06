@@ -1,21 +1,7 @@
 # Movies Micro Frontends
 
-## Ionic 4 Library
-
-[README.md](library/README.md)
-
-## Ionic 4 App
-
-[README.md](ionic4-app/README.md)
-
-## Ionic 4 PWA
-
-[README.md](ionic4-pwa/README.md)
-
-## Ionic 3 App
-
-[README.md](ionic3-app/README.md)
-
-## React PWA
-
-[README.md](react-pwa/README.md)
+[Ionic 4 Library](library/README.md)
+[Ionic 4 App](ionic4-app/README.md)
+[Ionic 4 PWA](ionic4-pwa/README.md)
+[Ionic 3 App](ionic3-app/README.md)
+[React PWA](react-pwa/README.md)
