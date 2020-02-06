@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "ionic3-app"
+    },
+    {
+      "path": "ionic4-app"
+    },
+    {
+      "path": "ionic4-pwa"
+    },
+    {
+      "path": "library"
+    },
+    {
+      "path": "react-pwa"
+    }
+  ],
+  "settings": {
+  }
+}
