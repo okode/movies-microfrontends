@@ -26,3 +26,13 @@ ionic serve
 ```
 npx cap open ios
 ```
+
+Build and run with Xcode.
+
+### Running Android
+
+```
+npx cap open android
+```
+
+Build and run with Android Studio.
