@@ -14,8 +14,7 @@
 
 ## Ionic 3 App
 
-Folder: /ionic3-app
-Name: ionic3-app
+[README.md](ionic3-app/README.md)
 
 ## React PWA
 
