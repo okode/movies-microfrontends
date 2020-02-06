@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "okode-movies": [
+        "dist/okode-movies"
+      ],
+      "okode-movies/*": [
+        "dist/okode-movies/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

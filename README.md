@@ -2,18 +2,16 @@
 
 ## Ionic 4 Shared Library
 
-Folder: /library
-Name: @okode/movies
+[README.md](library/README.md)
+
+## Ionic 4 App
+
+[README.md](ionic4-app/README.md)
 
 ## Ionic 4 PWA
 
 Folder: /ionic4-pwa
 Name: ionic4-pwa
-
-## Ionic 4 App
-
-Folder: /ionic4-app
-Name: ionic4-app
 
 ## Ionic 3 App
 

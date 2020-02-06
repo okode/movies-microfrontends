@@ -4,6 +4,7 @@ Created with:
 
 ```
 ionic start ionic4-app blank --type=angular --capacitor
+cd ionic4-app
 npx cap add ios
 npx cap add android
 ```
