@@ -18,5 +18,4 @@
 
 ## React PWA
 
-Folder: /react-pwa
-Name: react-pwa
+[README.md](react-pwa/README.md)
