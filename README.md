@@ -10,8 +10,7 @@
 
 ## Ionic 4 PWA
 
-Folder: /ionic4-pwa
-Name: ionic4-pwa
+[README.md](ionic4-pwa/README.md)
 
 ## Ionic 3 App
 
