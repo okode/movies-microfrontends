@@ -1,6 +1,6 @@
 # Movies Micro Frontends
 
-## Ionic 4 Shared Library
+## Ionic 4 Library
 
 [README.md](library/README.md)
 
