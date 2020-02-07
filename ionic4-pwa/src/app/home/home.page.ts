@@ -11,7 +11,7 @@ export class HomePage {
   constructor(private navCtrl: NavController) {}
 
   goToMovies() {
-    this.navCtrl.navigateForward('movies/list');
+    this.navCtrl.navigateForward('movies/home');
   }
 
 }

@@ -9,7 +9,7 @@ import { MovieDetailPageComponent } from './movie-detail-page/movie-detail-page.
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'list', component: MovieListPageComponent },
+  { path: 'home', component: MovieListPageComponent },
   { path: 'detail', component: MovieDetailPageComponent }
 ];
 
@@ -26,11 +26,7 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   exports: [
-    RouterModule,
-    OkodeMoviesComponent,
-    MovieDetailComponent,
-    MovieListPageComponent,
-    MovieDetailPageComponent
+    RouterModule
   ]
 })
 export class OkodeMoviesModule { }
