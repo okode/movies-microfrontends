@@ -13,6 +13,8 @@ npm i @ionic/angular
 
 ```
 ng g component movieDetail
+ng g component movieListPage
+ng g component movieDetailPage
 ```
 
 ## Building
