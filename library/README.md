@@ -5,7 +5,7 @@ Created with:
 ```
 ng new library --createApplication=false
 cd library
-ng generate library okode-movies --prefix=okode
+ng g library okode-movies --prefix=okode
 npm i @ionic/angular
 ```
 
