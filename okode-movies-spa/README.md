@@ -44,3 +44,10 @@ npm unlink
 npm ci
 npm run build
 ```
+
+## Running SPA
+
+```
+npm start
+```
+
