@@ -21,7 +21,7 @@ ng g component movieDetailPage
 
 ```
 npm ci
-ng build --watch
+npm run build -- --watch
 ```
 
 ## Link Library
