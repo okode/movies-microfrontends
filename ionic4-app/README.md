@@ -13,6 +13,8 @@ Add `"preserveSymlinks": true` in `angular.json` (projects.app.architect.build.o
 
 ## Building
 
+Ensure you have built and npm-linked the `library` project.
+
 ```
 npm ci
 npm link okode-movies
