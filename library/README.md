@@ -30,3 +30,10 @@ ng build --watch
 cd dist/okode-movies
 npm link
 ```
+
+## Unlink Library
+
+```
+cd dist/okode-movies
+npm unlink
+```
