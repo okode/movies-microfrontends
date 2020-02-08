@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'okode-movie-detail-page',
   templateUrl: './movie-detail-page.component.html',
-  styleUrls: ['./movie-detail-page.component.css']
+  styleUrls: ['./movie-detail-page.component.scss']
 })
 export class MovieDetailPageComponent implements OnInit {
 
