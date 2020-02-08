@@ -16,6 +16,8 @@ Configuration parameters:
 * Use SCSS.
 * Don't use BrowserAnimationsModule
 
+Complete setup applying manual steps from https://single-spa.js.org/docs/ecosystem-angular#configure-routes
+
 ## Adding components to library
 
 ```
@@ -45,16 +47,9 @@ cd dist/okode-movies
 npm unlink
 ```
 
-## Building SPA
+## Building single-spa
 
 ```
 npm ci
-npm run build
+npm run build:single-spa
 ```
-
-## Running SPA
-
-```
-npm start
-```
-
