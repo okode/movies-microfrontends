@@ -7,7 +7,14 @@ ng new okode-movies-spa
 cd okode-movies-spa
 ng g library okode-movies --prefix=okode
 npm i @ionic/angular
+ng add single-spa-angular
 ```
+
+Configuration parameters:
+
+* Use Angular Routing.
+* Use SCSS.
+* Don't use BrowserAnimationsModule
 
 ## Adding components to library
 

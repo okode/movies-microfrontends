@@ -15,11 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/okode-movies-spa",
             "index": "src/index.html",
-            "main": "src/main.ts",
+            "main": "src/main.single-spa.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
@@ -30,7 +30,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "customWebpackConfig": {
+              "path": "./extra-webpack.config.js"
+            }
           },
           "configurations": {
             "production": {
@@ -65,7 +68,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "browserTarget": "okode-movies-spa:build"
           },
@@ -159,6 +162,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "okode-movies-spa"
 }
