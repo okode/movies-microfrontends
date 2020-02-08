@@ -9,10 +9,13 @@ npx cap add ios
 npx cap add android
 ```
 
+Add `"preserveSymlinks": true` in `angular.json` (projects.app.architect.build.options)
+
 ## Building
 
 ```
 npm ci
+npm link okode-movies
 ionic build
 ```
 
@@ -25,6 +28,8 @@ ionic serve
 ### Running iOS
 
 ```
+ionic build
+npx cap sync ios
 npx cap open ios
 ```
 
@@ -33,6 +38,8 @@ Build and run with Xcode.
 ### Running Android
 
 ```
+ionic build
+npx cap sync android
 npx cap open android
 ```
 
