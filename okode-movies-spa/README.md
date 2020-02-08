@@ -9,7 +9,7 @@ ng g library okode-movies --prefix=okode
 npm i @ionic/angular
 ```
 
-## Adding components
+## Adding components to library
 
 ```
 ng g component movieDetail --project okode-movies
@@ -17,23 +17,30 @@ ng g component movieListPage --project okode-movies
 ng g component movieDetailPage --project okode-movies
 ```
 
-## Building
+## Building library with watch support
 
 ```
 npm ci
 npx ng build okode-movies -- --watch
 ```
 
-## Link Library
+## Link library
 
 ```
 cd dist/okode-movies
 npm link
 ```
 
-## Unlink Library
+## Unlink library
 
 ```
 cd dist/okode-movies
 npm unlink
+```
+
+## Building SPA
+
+```
+npm ci
+npm run build
 ```
