@@ -47,3 +47,25 @@ And (in other console) enter `host` folder and run:
 ```
 npx serve -s
 ```
+
+# Adding Ionic support
+
+```
+npm i @ionic/angular
+```
+
+* Import `node_modules/ionicons/dist/ionicons/svg` in `angular.json`.
+* Add `src/theme/variables.scss` styles to `angular.json`.
+* Create file `src/theme/variables.scss`.
+* ¿¿ Add `{ preloadingStrategy: PreloadAllModules }` to `RouterModule.forRoot` configuration. ?? -> NOT APPLYIED
+* Replace contents in `app.component.html` with:
+
+```
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+```
+
+* Import `IonicModule.forRoot()` in `app.module.ts`.
+* Add provier `{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }`.
+* Added Ionic global styles to `src/styles.scss`.

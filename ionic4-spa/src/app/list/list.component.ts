@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit {
+export class ListComponent {
 
-  constructor() { }
+  readonly movies = [ 'Interstellar', 'Blade Runner', 'Star Wars', 'The Matrix', 'Aliens' ];
 
-  ngOnInit() {
+  constructor(private navCtrl: NavController) { }
+
+  goToMovieDetail(movie: string) {
+    this.navCtrl.navigateForward('movies/detail');
   }
 
 }

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { DetailComponent } from './detail/detail.component';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { RouteReuseStrategy } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { EmptyRouteComponent } from './empty-route/empty-route.component';
   ],
   imports: [
     BrowserModule,
+    IonicModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ { provide: RouteReuseStrategy, useClass: IonicRouteStrategy } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
