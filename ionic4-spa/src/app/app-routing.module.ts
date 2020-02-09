@@ -6,8 +6,8 @@ import { EmptyRouteComponent } from './empty-route/empty-route.component';
 import { APP_BASE_HREF } from '@angular/common';
 
 const routes: Routes = [
-  { path: 'list', component: ListComponent },
-  { path: 'detail', component: DetailComponent },
+  { path: 'movies/list', component: ListComponent },
+  { path: 'movies/detail', component: DetailComponent },
   { path: '**', component: EmptyRouteComponent }
 ];
 
