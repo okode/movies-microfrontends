@@ -9,7 +9,7 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "app3": "http://localhost:4200/main.js",
+          "ionic4-spa": "http://localhost:4200/main.js",
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@4.4.1/lib/system/single-spa.min.js"
         }
       }
@@ -26,8 +26,8 @@
     <script>
       System.import('single-spa').then(function (singleSpa) {
         singleSpa.registerApplication(
-          'app3',
-          () => System.import('app3'),
+          'ionic4-spa',
+          () => System.import('ionic4-spa'),
           location => location.pathname.startsWith('/')
         );
         singleSpa.start();
