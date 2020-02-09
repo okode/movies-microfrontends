@@ -25,7 +25,7 @@ npm run build:single-spa
 
 # Validating in Single SPA Playground
 
-Go to http://single-spa-playground.org/ and register new Application with the following configuration values:
+Run `npm run serve:single-spa` and g o to http://single-spa-playground.org/ and register new Application with the following configuration values:
 
 * Framework: Angular
 * Application Name: ionic4-spa
