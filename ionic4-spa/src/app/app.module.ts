@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { DetailComponent } from './detail/detail.component';
+import { EmptyRouteComponent } from './empty-route/empty-route.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    EmptyRouteComponent,
     ListComponent,
     DetailComponent
   ],
