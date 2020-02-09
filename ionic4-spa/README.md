@@ -34,3 +34,10 @@ Run `npm run serve:single-spa` and g o to http://single-spa-playground.org/ and 
 
 Go to the configured application and *Star test*.
 
+# Running host application
+
+Enter `host` folder and run:
+
+```
+npx serve -s
+```
