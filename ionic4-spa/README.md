@@ -34,7 +34,7 @@ Run `npm run serve:single-spa` and g o to http://single-spa-playground.org/ and 
 
 Go to the configured application and *Start test* and download sample host application if needed.
 
-# Running host application
+# Running host application (external)
 
 Serve the SPA using:
 
@@ -42,7 +42,15 @@ Serve the SPA using:
 npm run serve:single-spa
 ```
 
-And (in other console) enter `host` folder and run:
+And (in other console) enter `host/external` folder and run:
+
+```
+npx serve -s
+```
+
+# Running host application (embedded)
+
+Enter `host/embedded` folder and run:
 
 ```
 npx serve -s

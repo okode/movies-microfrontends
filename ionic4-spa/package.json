@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa": "ng build --prod --deploy-url http://localhost:4200/",
+    "build:single-spa": "ng build --prod && rm -rf host/embedded/movies && mkdir -p host/embedded/movies && cp -R dist/ionic4-spa/* host/embedded/movies && mv host/embedded/movies/main-es2015.*.js host/embedded/movies/main-es2015.js && mv host/embedded/movies/main-es5.*.js host/embedded/movies/main-es5.js",
     "serve:single-spa": "ng serve --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
   },
   "private": true,
