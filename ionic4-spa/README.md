@@ -36,7 +36,13 @@ Go to the configured application and *Star test*.
 
 # Running host application
 
-Enter `host` folder and run:
+Serve the SPA using:
+
+```
+npm run serve:single-spa
+```
+
+And (in other console) enter `host` folder and run:
 
 ```
 npx serve -s
