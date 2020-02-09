@@ -32,7 +32,7 @@ Run `npm run serve:single-spa` and g o to http://single-spa-playground.org/ and 
 * Download URL: http://localhost:4200/main.js
 * Prefix for frontend routes: /
 
-Go to the configured application and *Star test*.
+Go to the configured application and *Start test* and download sample host application if needed.
 
 # Running host application
 
