@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { OkodeMoviesModule } from 'okode-movies';
+import { RouteReuseStrategy } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -12,9 +15,11 @@ import { EmptyRouteComponent } from './empty-route/empty-route.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    OkodeMoviesModule
   ],
-  providers: [],
+  providers: [ { provide: RouteReuseStrategy, useClass: IonicRouteStrategy } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
