@@ -1,27 +1,36 @@
-# Ionic4Spa
+## Ionic 4 SPA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
+# Starting
 
-## Development server
+Created as Angular 8 SPA with support for Single SPA before adding Ionic 4 support.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+ng new ionic4-spa
+cd ionic4-spa
+ng g component list
+ng g component detail
+ng add single-spa-angular
+```
 
-## Code scaffolding
+* Add providers: `[{ provide: APP_BASE_HREF, useValue: '/' }]` to `app-routing.module.ts`.
+* Add `{ path: '**', component: EmptyRouteComponent }` to your `app-routing.module.ts` routes.
+* Add a declaration for `EmptyRouteComponent` in `app.module.ts`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Building
 
-## Build
+```
+npm ci
+npm run build:single-spa
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Validating in Single SPA Playground
 
-## Running unit tests
+Go to http://single-spa-playground.org/ and register new Application with the following configuration values:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Framework: Angular
+* Application Name: ionic4-spa
+* Download URL: http://localhost:4200/main.js
+* Prefix for frontend routes: /
 
-## Running end-to-end tests
+Go to the configured application and *Star test*.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
