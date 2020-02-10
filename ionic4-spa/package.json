@@ -11,7 +11,6 @@
     "build:single-spa": "ng build --prod && rm -rf host/embedded/movies && mkdir -p host/embedded/movies && cp -R dist/ionic4-spa/* host/embedded/movies && mv host/embedded/movies/main-es2015.*.js host/embedded/movies/main-es2015.js && mv host/embedded/movies/main-es5.*.js host/embedded/movies/main-es5.js",
     "serve:single-spa": "ng serve --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
   },
-  "private": true,
   "dependencies": {
     "@angular-builders/custom-webpack": "^8",
     "@angular/animations": "~8.2.14",
